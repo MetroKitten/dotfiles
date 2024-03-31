@@ -1,0 +1,172 @@
+@import "../waybar/colors/mocha.css";
+
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
+* {
+  font-family: Fira;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  transition-duration: .5s;
+  margin: 16px 5px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces button {
+  color: @text;
+  background: @crust;
+  border-radius: 8px;
+  padding: 0px 15px 0px 15px;
+  margin: 10px 5px 10px 5px;
+  border: 1px solid @border;
+}
+
+#workspaces {
+  border-radius: 8px;
+  padding: 0px 5px 0px 5px;
+}
+
+#workspaces button:hover {
+  background: @surface0;
+  color: @text;
+}
+
+#workspaces button.active {
+  color: @crust;
+  background: @overlay2;
+  border: none; 
+}
+
+#custom-launcher,
+#custom-notification,
+#custom-wallpaper,
+#clock,
+#battery,
+#cpu,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#memory,
+#tray,
+#taskbar,
+#bluetooth,
+#battery,
+#custom-powermenu{
+  padding: 0px 10px;
+  margin: 10px 0px 10px 0px;
+	border-radius: 10px;
+  color: @crust;
+}
+
+
+#bluetooth {
+  background-color: @blue;
+}
+
+#battery {
+  background-color: @sapphire;
+}
+
+#backlight {
+  background-color: @pink;
+}
+
+#backlight-slider {
+  padding: 0px 10px;
+  margin: 10px 0px 10px 0px;
+	border-radius: 10px;
+  background-color: @pink;
+  min-width: 75px;
+}
+
+#backlight-slider slider {
+  background-color: @blue;
+}
+
+#backlight-slider trough {
+  background-color: @lavender;
+}
+
+#backlight-slider highlight {
+  background-color: @sky;
+}
+
+#cpu {
+  background-color: @lavender;
+}
+
+#temperature{
+  background-color: @blue;
+}
+
+#memory {
+  background-color: @sapphire;
+}
+
+#custom-wallpaper {
+  background-color: @sky;
+}
+
+#pulseaudio {
+  background-color: @blue;
+  padding: 10px 15px ;
+}
+
+#network {
+  background-color: @green;
+}
+
+
+#clock {
+  background-color: @mauve;
+}
+
+#tray {
+  background-color: @lavender;
+}
+
+#taskbar {
+  background: @lavender;
+
+}
+
+#taskbar button {
+  margin:0;
+  border-radius: 15px;
+  padding: 0px 5px 0px 5px;
+}
+
+#custom-notification {
+  background: @lavender;
+  font-family: "NotoSansMono Nerd Font";
+}
+
+#custom-powermenu {
+  background-color: @maroon;
+  padding-right: 10px;
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #abb2bf;
+  }
+}
+
+label:focus {
+  background-color: #000000;
+}
