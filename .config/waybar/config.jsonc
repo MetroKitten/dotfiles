@@ -5,7 +5,7 @@
     "spacing": 7,
     "modules-left": ["wlr/taskbar", "custom/wallpaper"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "tray", "clock", "bluetooth", "network", "custom/notification", "backlight", "backlight/slider", "battery", "custom/powermenu"],
+    "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "backlight", "backlight/slider", "clock", "battery", "custom/notification", "custom/powermenu"],
   
     // Workspaces
     "hyprland/workspaces" : {
