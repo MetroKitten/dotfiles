@@ -11,6 +11,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+alias ls="lsd"
+alias vim="nvim"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -23,4 +25,8 @@ plugin=(
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
