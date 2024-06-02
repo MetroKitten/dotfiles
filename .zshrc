@@ -9,7 +9,6 @@ fi
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-source "${ZINIT_HOME}/zinit.zsh"
 
 # Source/Load Zinit
 source "${ZINIT_HOME}/zinit.zsh"
@@ -59,21 +58,10 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls $realpath'
 # Aliases
 alias ls="lsd"
 alias vim="nvim"
+alias python3="python"
 
 export EDITOR="nvim"
-export PYENV_ROOT="$HOME/.pyenv"
-export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
-export PATH="$PATH:$HOME/go/bin/"
 
-plugin=(
-  pyenv
-)
-
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# Generate for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # Shell integrations
 eval "$(fzf --zsh)"
